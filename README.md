@@ -3,6 +3,9 @@
 Alumno: Stankevicius Nicolás
 DNI: 36.426.067
 
+Alumnno: Martincevich Nazareno
+DNI: 32.185.751
+
 * LOGIN
 Url: /admin/
 Usuario: admin
