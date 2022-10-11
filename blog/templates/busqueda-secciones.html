@@ -1,0 +1,21 @@
+{% extends "nav_up_dwn.html" %}
+
+{% block contenido1 %}
+
+<h4>Búsqueda: {{categoria}}</h4>
+
+
+{% if secciones %}
+
+<ul>
+{% for seccion in secciones %}
+
+    <li>Categoría: {{seccion.categoria}}<br> 
+        Lugar: {{seccion.lugar}}</li>
+        <br>
+{% endfor %}
+</ul>
+
+{% endif %}
+
+{% endblock %}

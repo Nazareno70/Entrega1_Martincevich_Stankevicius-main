@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+{% extends "nav_up_dwn.html" %}
+
+{% block contenido1 %}
+{% load static %}
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+<meta name="description" content="" />
+<meta name="author" content="" />
+<title>Proyecto Final - Coderhouse </title>
+<!-- Favicon-->
+<link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+<!-- Core theme CSS (includes Bootstrap)-->
+<link href="{% static 'index/css/styles.css' %}" rel="stylesheet" />
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario - Agregar AUTOR</title>
+    
+</head>
+<body>
+
+    <br>
+    <br>
+    <form action="/agregar-autor/" method="POST">{% csrf_token %}
+
+        <p> Nombre: <input type="text" name="nombre-autor" ></p>
+        <p> Apellido: <input type="text" name="apellido-autor"></p>
+        <p> E-mail: <input type="email" name="email-autor"></p>
+
+        <input type="submit" value="Enviar">
+    </form>
+    <br>
+</body> 
+
+
+
+
+
+</html>
+
+{% endblock %}
